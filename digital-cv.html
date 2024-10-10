@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="digital-cv.css">
+
+    <title>Digital CV</title>
+    </head>
+
+<body>
+  <header>
+<!-- Intro Section-->
+    <section>
+      <div class="image-wrapper">
+        <img 
+        src="../img/me.jpeg" 
+        
+        alt="The aspiring software developer with their dachshund Mylo">
+    </div>
+
+    <div class="name-wrapper">
+      <h1>Ara Copeland</h1>
+    </div>
+
+    <div class="info-wrapper">
+      <p>email: aracope93@gmail.com</p>
+      <p>Location: Spokane, WA</p>
+    </div>
+  </section>
+</header>
+
+<main>
+<!-- About-->
+  <section class="about-container">
+      <h2>About</h2>
+      <div class="about-wrapper"></div>
+        <p>An aspiring software engineer with an eye for detail! With the help of Springboard, I am currently polishing rusted skills originally gained from breaking and fixing MySpace backgrounds in the early 2000's.</p>
+    </div>
+  </section>
+
+<!--What I know section-->  
+  <section class="skills-container">
+<!--Skills-->
+    <div class="lang-wrapper">
+      <h2>Languages and Skills</h2>
+        <h3>Web Development</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+
+        <h3>Other</h3>
+          <ol>
+            <li>Command line</li>
+            <li>Git/GitHub</li>
+          </ol>
+    </div>
+<!--Education-->
+    <div class="edu-wrapper">
+        <h2>Education</h2>
+          <ul>
+            <li>Gonzaga Springboard(current)</li>
+            <li>Weiser High School (2011)</li>
+          </ul>
+    </div>
+  </section>
+
+    <!--Tools-->
+  <section class="table-container">
+      <h3>Tools</h3>
+   <!--Tools Table-->
+     
+        <table>
+        <!--Tools Table Header: Titles for table column-->
+        <thead> 
+          <tr>
+            <th>Tool</th> <!--Name of tool-->
+            <th>Description</th> <!--Description of tool function-->
+            <th>Proficiency</th> <!--My skill level with tool-->
+          </tr>
+        </thead>
+
+        <!--Tools Table Body: Information about each tool-->
+        <tbody>
+        <!--Tool: Visual Studio Code-->
+          <tr>
+            <td>Visual Studio Code</td>
+            <td>A free source-code editor made by Microsoft.</td>
+            <td>Beginner</td>
+          </tr>
+        <!--Tool: Slack-->
+          <tr>
+            <td>Slack</td>
+            <td>Collaboration site for school, with file sharing, messaging and topic channels.</td>
+            <td>Expert</td>
+          </tr>
+        <!--Tool: Krita-->
+          <tr>
+            <td>Krita</td>
+            <td>A professional free, open source painting program.</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>   
+      </table>
+    </section>
+
+    <!--Projects-->
+<!-- A future spot to put completed projects.
+    <section>
+      <h2>Projects</h2>
+        <ol>
+          <li></li>
+        </ol>
+    </section> -->  
+</main>
+
+<footer>
+<!--Contact-->
+<section class="contact-container">
+<h2>Contact Me</h2>
+<!--Contact Form-->
+  <div class="form-wrapper">
+           <form 
+           action="https://api.web3forms.com/submit" 
+           method="POST">
+          <input
+           type="hidden"
+           name="access_key" value="538f92e0-c916-4c2b-a136-eb6177b8c621"> <!-- Sends information input on the contact form to my email-->
+
+        <!--Contact Form: Enter Name-->
+          <div class="text-input-container">
+            <label for="name">Enter Your Name</label>
+            <input
+              name="name"
+              type="text"
+              placeholder="Your Name"
+              minlength="2"
+              id="name"
+              autocomplete="on"
+              required>
+          </div>
+
+        <!--Contact Form: Enter e-mail-->
+        <div class="text-input-wrapper">
+          <label for="email">Enter e-mail</label>
+          <input
+            name="email"
+            type="text"
+            placeholder="Your email"
+            minlength="2"
+            id="email"
+            autocomplete="on"
+            required>
+        </div>
+
+        <!--Contact Form: Enter Phone number-->
+        <div class="text-input-wrapper">
+          <label for="phone">Enter phone number</label>
+          <input
+            name="phone"
+            type="text"
+            placeholder="Your Phone Number"
+            minlength="2"
+            id="phone"
+            autocomplete="on">
+        </div>
+
+        <!--Contact Form: Reason for contact drop down-->
+        <div class="select-wrapper">
+          <label for="contact">Reason for contact</label>
+            <select 
+              name="contact" 
+              id="contact">
+              <option value="">--Reason for contact--</option>
+              <option value="job">Job Offer</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <!--Contact Form: Favorite Color-->
+        <div class="select-wrapper">
+        <label for="color">Pick your favorite color:</label><input type="color" name="color" id="color">
+        </div>
+
+        <!--Contact Form: Message Box--> 
+        <div class="text-input-wrapper">
+        <label for="msg">Message</label>
+          <textarea 
+            name="msg" 
+            id="msg"   
+            cols="20" rows="5" 
+            minlength="5"
+            placeholder="Hello! Nice to meet you!"></textarea>
+        </div>
+
+        <!--Contact Form: Submit Button-->
+        <div class="button-wrapper">
+        <button type="submit">Submit Form</button>
+        </div>
+        </form>
+      </div>   
+   </section>      
+
+    <!--Links-->
+  <!--Note: Github and LinkedIn are in the footer and nested within a <nav> element. -->
+     <h3>Links</h3>
+     <nav class="links-container">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aracopeland" target="_blank" rel="noopener noreferrer"><em>LinkedIn</em></a></li>
+          <li><a href="https://github.com/aracope" target="_blank" rel="noopener noreferrer"><em>GitHub</em></a></li>
+        </ul>
+     </nav>
+</footer>
+     
+</body>
+</html>
